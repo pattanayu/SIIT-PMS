@@ -1,5 +1,5 @@
 <?php
-$in="Hello ";
+
 
 /**
  * The main template file.
@@ -22,6 +22,10 @@ get_header(); ?>
 	<div >
 		<main>
 			<div style="padding-top: 0px; ">
+				<select class="form-control select-campus" style="">
+					<option class="option-campus">Rangsit Campus</option selected>
+					<option class="option-campus">Bangkadi Campus</option>
+				</select>
 				<?php echo do_shortcode('[smartslider3 slider=1]');?>
 
 				<!--start tab area-->
@@ -189,7 +193,7 @@ get_header(); ?>
 				<div class="row" style="margin-bottom: 0px; padding: 0px;">
 					<div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
 						<img style="height: 325px; width: 100%;" src="<?php bloginfo('template_url'); ?>/images/header/bangkadi.jpg_1024">
-						<a href="" style="margin-bottom: 0px;" class="btn  button-index">Book Now !</a>
+						<a href="http://localhost/property/dorm-booking/" style="margin-bottom: 0px;" class="btn  button-index">Reservation !</a>
 					</div>
 					<div class="col-md-6" style="padding-left: 0px; padding-right: 0px;">
 						<?php include('calender.php'); ?>

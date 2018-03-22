@@ -1771,9 +1771,33 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     background-color: #3b1f62;
     transition-duration: 0.5s;
 
+
 }
 .button-index:hover {
     background-color: #D3D3D3;
-    
+}
+.split-menu{
+    margin-right:500px;
+}
+.select-campus{
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0px;
+    background-color: #3b1f62;
+    color: white;
+    border:0px;
+    text-align: center;
+    text-align-last: center;
+}
+.submit-button{
+    background-color: #3b1f62;
+    padding: 10px 40px;
+    transition-duration: 0.5s;
+    color: white;
+
+}
+.submit-button:hover {
+    background-color:   #8853c1;
+    color: white;
 }
 

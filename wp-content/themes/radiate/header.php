@@ -33,6 +33,13 @@
 		<div class="header-wrap clearfix" style="background-color: #3b1f62;">
 			
             <a href=""><img src="<?php bloginfo('template_url'); ?>/images/header/logo1.png" style="height: 40px; margin-top: 10px; margin-left: 5%;"></a>
+            	
+            		
+            	
+				
+				
+			
+           
             
 			<div class="site-branding">
 
@@ -55,6 +62,9 @@
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-primary-container' ) ); ?>
 			</nav><!-- #site-navigation -->
+			
+			
+
 		</div><!-- .inner-wrap header-wrap -->
 	</header><!-- #masthead -->
 
