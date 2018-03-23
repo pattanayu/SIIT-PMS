@@ -22,10 +22,6 @@ get_header(); ?>
 	<div >
 		<main>
 			<div style="padding-top: 0px; ">
-				<select class="form-control select-campus" style="">
-					<option class="option-campus">Rangsit Campus</option selected>
-					<option class="option-campus">Bangkadi Campus</option>
-				</select>
 				<?php echo do_shortcode('[smartslider3 slider=1]');?>
 
 				<!--start tab area-->

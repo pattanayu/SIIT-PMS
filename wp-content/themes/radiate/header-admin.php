@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
 <?php wp_head(); ?>
 </head>
 
@@ -34,10 +33,6 @@
 		<div class="header-wrap clearfix" style="background-color: #3b1f62;">
 			
             <a href=""><img src="<?php bloginfo('template_url'); ?>/images/header/logo1.png" style="height: 40px; margin-top: 10px; margin-left: 5%;"></a>
-            <select name="campus" class="form-control select-campus">
-            	<option>Rangsit</option>
-            	<option>Bangkadi</option>
-            </select>
             	
             		
             	
@@ -66,6 +61,7 @@
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'radiate' ); ?></a>
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-primary-container' ) ); ?>
+				<h4 class="showname">hello P'Mod</h4>
 			</nav><!-- #site-navigation -->
 			
 			
