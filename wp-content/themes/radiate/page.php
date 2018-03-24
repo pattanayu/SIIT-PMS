@@ -12,26 +12,77 @@
  * @since Radiate 1.0
  */
 
+
+
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+	
+		<div class="container">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
 			<?php endwhile; // end of the loop. ?>
+		</div>
+		<?php 
+		if(is_page(Account))
+		{?>
+		
+		<div class="container" style="background-color: white; margin-bottom: 20px;">
+			<div style=" margin-top: 10px;">
+				<h1 style="padding: 10px;">History of Reservation</h1>
+				<table class="table">
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				    <!--Table head-->
+				    <thead style="background-color: #3b1f62;">
+				        <tr style="color: white;">
+				            <th>#</th>
+				            <th>Room Number</th>
+				            <th>Category</th>
+				            <th>Start Date</th>
+				            <th>Status</th>
+				            <th>Contact</th>
+				        </tr>
+				    </thead>
+				    <!--Table head-->
 
-<?php get_sidebar(); ?>
+				    <!--Table body-->
+				    <tbody style="background-color: white;">
+				        <tr>
+				            <th scope="row">1</th>
+				            <td>205</td>
+				            <td>Room</td>
+				            <td>19/02/2018</td>
+				            <td>Living</td>
+				            <td></td>
+				        </tr>
+				        <tr>
+				            <th scope="row">2</th>
+				            <td>403</td>
+				            <td>Room</td>
+				            <td>21/05/2018</td>
+				            <td>Living</td>
+				            <td></td>
+				        </tr>
+				        <tr>
+				            <th scope="row">3</th>
+				            <td>245</td>
+				            <td>Room</td>
+				            <td>02/06/2018</td>
+				            <td>Living</td>
+				            <td></td>
+				        </tr>
+				    </tbody>
+				    <!--Table body-->
+				</table>
+			<!--Table-->
+	                        
+			</div>
+		</div>
+		<?php
+	}
+		?>
+		
+	
 <?php get_footer(); ?>

@@ -14,7 +14,14 @@
  */
 
 
-get_header(); 
+if(is_page(dorm-booking))
+{
+get_header('normal');
+}
+else
+{
+get_header();
+}
 ?>
 <script>
 function roomtypeer() {
@@ -45,9 +52,9 @@ function roomtypeer() {
 
 </script>
 <body onload="roomtypeer()">
-<form action="index.php" id="bookform" method="post">
+<form action="http://localhost/property/index.php" id="bookform" method="post">
 	<div class="container" style="margin-bottom: 20px; margin-top: 50px;">
-		<h2 style="padding: 10px;">Dormitory Reservation</h2>
+		<h2 style="padding: 10px; font-weight: bold;">Dormitory Reservation</h2>
 		<div style="border: 1px solid gray"></div>
 		<div class="form-inline">
 			<div class="col-md-3" style="margin-top: 20px;">
@@ -141,9 +148,51 @@ function roomtypeer() {
 		</div>
 
 	</div>
+	<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <div class="container">
+		    	<h2>Wait for Approval from Admin</h2>
+		    	<label style="padding: 50px;">Click "Ok" button to proceed and check your e-mail for approval </label>
+		    	<br>
+		    	<button class="btn submit-button" type="submit" style="margin-left: 80%;">Ok</button>
+		    </div>
+		  </div>
+	</div>
+	<div style="margin-bottom: 20px;">
+	<a id="button-popmodal" class="btn submit-button" style="margin-left: 35%; margin-top: 50px;">
+        Reserve</a>
+    <a href="http://localhost/property/index.php" class="btn submit-button" style="margin-left: 3%; margin-top: 50px;">Cancel</a>
+    </div>
 </form>
-<div style="margin-top: 20px; margin-bottom: 30px; margin-left: 70%; ">
-<button type="submit" class="btn submit-button">Reserve</button>
-</div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("button-popmodal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 
 <?php get_footer(); ?>

@@ -22,6 +22,7 @@ get_header(); ?>
 	<div >
 		<main>
 			<div style="padding-top: 0px; ">
+				
 				<?php echo do_shortcode('[smartslider3 slider=1]');?>
 
 				<!--start tab area-->
