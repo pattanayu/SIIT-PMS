@@ -17,13 +17,31 @@
 
 
 get_header(); ?>
-
+<script>
+function showcampus() {
+    var x = document.getElementById("selectcampus").value;
+    if (x == "rangsit") {
+    	document.getElementById("show-bangkadi").style.display = 'none';
+    	document.getElementById("show-rangsit").style.display = '';
+    }
+    else{
+    	document.getElementById("show-bangkadi").style.display = '';
+    	document.getElementById("show-rangsit").style.display = 'none';
+    }
+}
+</script>
+<body onload="showcampus()">
 
 	<div >
 		<main>
 			<div style="padding-top: 0px; ">
+				<div id="show-bangkadi">
+					<?php echo do_shortcode('[smartslider3 slider=1]');?>
+				</div>
+				<div id="show-rangsit">
+					<?php echo do_shortcode('[smartslider3 slider=5]');?>
+				</div>
 				
-				<?php echo do_shortcode('[smartslider3 slider=1]');?>
 
 				<!--start tab area-->
 				<ul class="nav nav-tabs "  >

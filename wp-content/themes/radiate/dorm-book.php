@@ -47,9 +47,6 @@ function roomtypeer() {
     document.getElementById("price").innerHTML = y;
 
 }
-
-
-
 </script>
 <body onload="roomtypeer()">
 <form action="http://localhost/property/index.php" id="bookform" method="post">

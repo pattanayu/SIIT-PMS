@@ -34,9 +34,9 @@
 		<div class="header-wrap clearfix" style="background-color: #3b1f62;">
 			
             <a href=""><img src="<?php bloginfo('template_url'); ?>/images/header/logo1.png" style="height: 40px; margin-top: 10px; margin-left: 5%;"></a>
-            <select name="campus" class="form-control select-campus">
-            	<option>Rangsit</option>
-            	<option>Bangkadi</option>
+            <select name="campus" class="form-control select-campus" onchange="showcampus()" id="selectcampus">
+            	<option value="rangsit">Rangsit</option>
+            	<option value="bangkadi">Bangkadi</option>
             </select>
             	
             		
