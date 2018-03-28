@@ -1777,7 +1777,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     background-color: #D3D3D3;
 }
 .split-menu{
-    margin-right:500px;
+    margin-right:400px;
 }
 .select-campus{
     font-size: 20px;
@@ -1847,10 +1847,15 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     border-width: 1px 0px 0px 0px;
 }
 
-.sidenav a:hover {
+.sidenav a:hover{
     background-color: #632E9B;
     color: #f1f1f1;
 }
+.sidenav .active{
+    background-color: #632E9B;
+    color: #f1f1f1;
+}
+
 
 .main {
     margin-left: 220px; /* Same as the width of the sidenav */
@@ -1900,4 +1905,13 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
 /*End Modal pop up*/
+/* container in admin form*/
+.int{
+     margin-right: 0px;
+      margin-top:63px; 
+      width: 1130px;
+      
+
+}

@@ -13,7 +13,8 @@
  * @since Radiate 1.0
  */
 
-if(is_page(request-form))
+
+if(get_the_title() == 'request-form'  )
 {
 get_header('normal');
 }

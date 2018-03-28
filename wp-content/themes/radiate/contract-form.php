@@ -14,7 +14,7 @@
  */
 
 
-if(is_page(contract-form))
+if(get_the_title() == 'contract-form'  )
 {
 get_header('normal');
 }
@@ -74,6 +74,7 @@ get_header();
 	  				</div>
 	  				<div class="form-group col-md-3" style="margin-top: 20px;">
 	  					 <select class="form-control" name="curriculum">
+	  					 		<option value="Che">-</option>
                                 <option value="Che">ChE</option>
                                 <option value="CE">CE</option>
                                 <option value="CPE">CPE</option>

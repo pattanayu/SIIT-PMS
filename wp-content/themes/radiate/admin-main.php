@@ -15,7 +15,7 @@
 
 
 
-if(is_page(admin-main))
+if(get_the_title() == 'admin-main'  )
 {
 get_header('admin');
 }
@@ -23,14 +23,11 @@ else
 {
 get_header();
 }
-
-
 ?>
 <div class="sidenav">
-
-  <a href="#" >Add/Del/Fix</a>
+	<h3 style="text-align: center; color: white; padding: 5px;">Campus</h3>
+  <a href="#" >Property</a>
   <a href="#">Contract and Reservation Form</a>
-  <a href="#">Search</a>
   <a href="#">User</a>
   <a href="#">Expends</a>
 </div>

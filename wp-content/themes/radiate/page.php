@@ -25,8 +25,11 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 			<?php endwhile; // end of the loop. ?>
 		</div>
+
+
+
 		<?php 
-		if(is_page(Account))
+		if(get_the_title() == 'Account')
 		{?>
 		
 		<div class="container" style="background-color: white; margin-bottom: 20px;">

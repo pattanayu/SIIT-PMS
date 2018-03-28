@@ -14,7 +14,7 @@
  */
 
 
-if(is_page(dorm-booking))
+if(get_the_title() == 'dorm-booking'  )
 {
 get_header('normal');
 }
@@ -30,19 +30,22 @@ function roomtypeer() {
     if (x == 1) {
     	y = 4500;
     	document.getElementById("showfriend").style.display = 'none';
+    	document.getElementById("stayalone").style.display = 'none';
     }
     else if (x == 2) {
     	y = 2500;
     	document.getElementById("showfriend").style.display = '';
-
+    	document.getElementById("stayalone").style.display = '';
     }
     else if (x == 3) {
     	y = 3000;
     	document.getElementById("showfriend").style.display = 'none';
+    	document.getElementById("stayalone").style.display = '';
     }
     else if (x == 4) {
     	y = 2500;
     	document.getElementById("showfriend").style.display = 'none';
+    	document.getElementById("stayalone").style.display = '';
     }
     document.getElementById("price").innerHTML = y;
 
@@ -56,16 +59,26 @@ function roomtypeer() {
 		<div class="form-inline">
 			<div class="col-md-3" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">Room Type *</label>
+					<label style="font-weight: bold;">Resident Type *</label>
 					<select class="form-control" name="roomtype" onchange="roomtypeer()" id="roomtypee"> 
-						<option value="1">Room A and B</option>
-						<option value="2">Room A and B With Friend</option>
-						<option value="3">Room A only</option>
-						<option value="4">Room B only</option>
+						<option value="1">Stay alone</option>
+						<option value="2">stay with specified</option>
+						<option value="3">stay with random</option>
+						<option value="4">stay without roommate</option>
 					</select>
 				</div>
 			</div>
-			<div class="col-md-2" style="margin-top: 20px;">
+			<div class="col-md-3" style="margin-top: 20px;" id="stayalone">
+				<div class="form-group" >
+					<label style="font-weight: bold;">Room Type</label>
+					<br>
+					<select class="form-control" name="roomtype"> 
+						<option value="1">Room A </option>
+						<option value="2">Room B </option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-3" style="margin-top: 20px;">
 				<div class="form-group">
 					<label style="font-weight: bold;">Your Price</label>
 					<br>
@@ -106,21 +119,21 @@ function roomtypeer() {
 		<div class="form-inline">
 			<div class="col-md-4" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">Name</label>
+					<label style="font-weight: bold;">Name *</label>
 					<br>
 					<input type="text" name="name" class="form-control">
 				</div>
 			</div>
 			<div class="col-md-4" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">Surname</label>
+					<label style="font-weight: bold;">Surname *</label>
 					<br>
 					<input type="text" name="surname" class="form-control">
 				</div>
 			</div>
 			<div class="col-md-4" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">Student ID</label>
+					<label style="font-weight: bold;">Student ID Or Other ID *</label>
 					<br>
 					<input type="text" name="studentid" class="form-control">
 				</div>
@@ -129,16 +142,34 @@ function roomtypeer() {
 		<div class="form-inline">
 			<div class="col-md-4" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">E-mail</label>
+					<label style="font-weight: bold;">E-mail *</label>
 					<br>
 					<input type="text" name="email" class="form-control">
 				</div>
 			</div>
 			<div class="col-md-4" style="margin-top: 20px;">
 				<div class="form-group">
-					<label style="font-weight: bold;">Mobile Phone</label>
+					<label style="font-weight: bold;">Mobile Phone *</label>
 					<br>
 					<input type="text" name="mobile" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-4" style="margin-top: 20px;">
+				<div class="form-group">
+					<label style="font-weight: bold;">Curriculum</label>
+					<br>
+					<select class="form-control" name="curriculum">
+								<option value="Che">-</option>
+                                <option value="Che">ChE</option>
+                                <option value="CE">CE</option>
+                                <option value="CPE">CPE</option>
+                                <option value="EC">EC</option>
+                                <option value="EM">EM</option>
+                                <option value="IE">IE</option>
+                                <option value="IT">IT</option>
+                                <option value="MT">MT</option>
+                                <option value="ME">ME</option>
+                    </select>
 				</div>
 			</div>
 			
