@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: create-campus
+ * Template Name: property-add
  * The template for displaying all pages.
  *
  * This is the template that displays all pages by default.
@@ -15,7 +15,7 @@
 
 
 
-if(get_the_title() == 'create-campus'  )
+if(get_the_title() == 'property-add'  )
 {
 get_header('admin');
 }
@@ -25,7 +25,7 @@ get_header();
 }
 ?>
 <div class="sidenav" id="sidebarslide">
-	<h3 style="text-align: center; color: white; padding: 5px;">Campus</h3>
+	
   <a class="slidesidebar active" >Properties</a>
   <a class="slidesidebar" href="#">Contract and Reservation Form</a>
   <a class="slidesidebar" href="#">User</a>
@@ -44,17 +44,42 @@ for (var i = 0; i < a.length; i++) {
 }
 </script>
 <div class="container int" style="font-weight: bold; height: 599px;">
-	<h2 style="padding: 10px;">Create Campus</h2>
-	<div style="border: 1px solid gray"></div>
+	<h2 style="padding: 10px;">Add Area</h2>
+	<div style="border: 1px solid gray "></div>
 		<form class="form-horizontal" action="" style="margin-top: 20px; ">
-		<div class="form-group">
-	      <label class="control-label col-sm-2">ชื่อเต็ม :</label>
-	      <div class="col-sm-10">
-	        <input type="text" class="form-control"  style="width: 60%;">
-	      </div>
-	    </div>
+		<div class="form-inline" style="margin-left: 20px; margin-bottom: 20px;">
+			<div class="form-group" >
+               <label style="font-weight: bold;">Select Campus: </label>
+				<select class="form-control" name="propertype"> 
+							<option value="bkd">Bangkadi</option>
+							<option value="rs">Rangsit</option>
+							
+				</select>
+
+
+              </div>
+              <div class="form-group" style="margin-left: 50px;">
+               <label style="font-weight: bold;">Select Area: </label>
+				<select class="form-control" name="subtype"> 
+							<option value="area">Area</option>
+							<option value="store">Store</option>
+							<option value="lab">Lab</option>
+							
+				</select>
+
+              </div>
+               <div class="form-group" style="margin-left: 50px;">
+               <label style="font-weight: bold;">Select Dormitory: </label>
+				<select class="form-control" name="subtype"> 
+							<option value="A">A</option>
+							<option value="B">B</option>
+				</select>
+
+              </div>
+		</div>
+		
 	    <div class="form-group">
-	      <label class="control-label col-sm-2 ">ตัวย่อ :</label>
+	      <label class="control-label col-sm-2 ">เลขห้อง :</label>
 	      <div class="col-sm-10">
 	        <input type="text" class="form-control"  style="width: 60%;">
 	      </div>
@@ -72,7 +97,7 @@ for (var i = 0; i < a.length; i++) {
 	      </div>
 	    </div>
 	    <button type="submit" class="btn submit-button" style="margin-left: 30%">Add</button>
-  		<a href="http://localhost/property/campus-menu/" class="btn submit-button" style="margin-left: 5%">Cancel</a>
+  		<a href="http://localhost/property/property-menu-rs/" class="btn submit-button" style="margin-left: 5%">Cancel</a>
 	  </form>
 </div>
   

@@ -1808,6 +1808,28 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     background-color:   #8853c1;
     color: white;
 }
+.search-button{
+    background-color: #3b1f62;
+    padding: 5px 5px;
+    transition-duration: 0.5s;
+    color: white;
+
+}
+.search-button:hover {
+    background-color:   #8853c1;
+    color: white;
+}
+.add-button{
+    background-color: #3b1f62;
+    padding: 5px 15px;
+    transition-duration: 0.5s;
+    color: white;
+
+}
+.add-button:hover {
+    background-color:   #8853c1;
+    color: white;
+}
 .showname{
     position: absolute;
     top: 50%;

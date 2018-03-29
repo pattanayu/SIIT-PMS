@@ -26,7 +26,7 @@ get_header();
 ?>
 <div class="sidenav" id="sidebarslide">
 	<h3 style="text-align: center; color: white; padding: 5px;">Campus</h3>
-  <a class="slidesidebar active" >Property</a>
+  <a class="slidesidebar active" >Properties</a>
   <a class="slidesidebar" href="#">Contract and Reservation Form</a>
   <a class="slidesidebar" href="#">User</a>
   <a class="slidesidebar" href="#">Expends</a>
