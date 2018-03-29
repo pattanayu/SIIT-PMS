@@ -1931,9 +1931,17 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 /*End Modal pop up*/
 /* container in admin form*/
 .int{
-     margin-right: 0px;
-      margin-top:63px; 
-      width: 1130px;
+    right: 0px;
+    left: 210px;
+    top:63px; 
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    
       
 
 }
+.container{
+    background-color: lightgray;
+}
+

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: contract-menu-rs
+ * Template Name: User-menu-rs
  * The template for displaying all pages.
  *
  * This is the template that displays all pages by default.
@@ -15,7 +15,7 @@
 
 
 
-if(get_the_title() == 'contract-menu-rs'  )
+if(get_the_title() == 'User-menu-rs'  )
 {
 get_header('admin');
 }
@@ -26,9 +26,9 @@ get_header();
 ?>
 <div class="sidenav" id="sidebarslide">
 	<h3 style="text-align: center; color: white; padding: 5px;">Rangsit </h3>
-  <a class="slidesidebar" href="#" >Properties</a>
-  <a class="slidesidebar active" >Contract and Reservation Form</a>
-  <a class="slidesidebar" href="#">User</a>
+  <a class="slidesidebar" href="#">Properties</a>
+  <a class="slidesidebar" href="#">Contract and Reservation Form</a>
+  <a class="slidesidebar active" >User</a>
   <a class="slidesidebar" href="#">Expends</a>
 </div>
 <script>
@@ -44,26 +44,35 @@ for (var i = 0; i < a.length; i++) {
 }
 </script>
 <div class="container int" style="height: 599px;">
-	<h2 style="padding: 10px; font-weight: bold;">Contract and Reservation Form</h2>
+	<h2 style="padding: 10px; font-weight: bold;">User</h2>
 	<div style="border: 1px solid gray ;margin-bottom: 20px;"></div>
 	<form class="form-inline" action="" style="margin-top: 20px;">
              
               <div class="form-group" >
-               <label style="font-weight: bold;">Select Type: </label>
+               <label style="font-weight: bold;">User Type: </label>
 				<select class="form-control" name="propertype"> 
-							<option value="contract">Contract Form</option>
-							<option value="reservation">Reservation Form</option>
+							<option value="student">Students</option>
+							<option value="renter">Renters</option>
+							<option value="teacher">Teachers</option>
 							
 				</select>
-
-
               </div>
-               
-              <div class="form-group" style="margin-left: 30px;">
-                <a class="btn submit-button "> Add Contract</a>
+              <div class="form-group" style="margin-left: 20px;">
+				<select class="form-control" name="propertype"> 
+							<option value="present">present</option>
+							<option value="old">Old</option>
+							
+				</select>
               </div>
               <div class="form-group" style="margin-left: 30px;">
-                <a class="btn submit-button "> Add Reservation</a>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <button class="btn search-button "> Search</button>
+              </div>
+              
+              <div class="form-group" style="margin-left: 30px;">
+                <a class="btn submit-button "> Add User</a>
               </div>
     </form>
 	<table class="table" style="margin-top: 20px;">
@@ -72,13 +81,12 @@ for (var i = 0; i < a.length; i++) {
 				    <thead style="background-color: #3b1f62;">
 				        <tr style="color: white;">
 				            <th>#</th>
-				            <th>Ref.</th>
-				            <th>Type</th>
+				            <th>ID</th>
 				            <th>Name</th>
-				            <th>Status</th>
-				            <th>Document</th>
+				            <th>UserName</th>
+				            <th>Types</th>
 				            <th>Edit</th>
-				            <th>Approve</th>
+				            <th>Delete</th>
 				        </tr>
 				    </thead>
 				    <!--Table head-->
@@ -90,10 +98,9 @@ for (var i = 0; i < a.length; i++) {
 				            <td>1123</td>
 				            <td>Contract</td>
 				            <td>Max</td>
-				            <td>Waiting</td>
-				            <td> <button class="btn btn-default">Open</button> </td>
+				            <td>Student</td>
 				            <td> <button class="btn btn-warning">Edit</button> </td>
-				            <td> <button class="btn btn-default">Approve</button> </td>
+				            <td> <button class="btn btn-danger">Delete</button> </td>
 				        </tr>
 				        
 				    </tbody>
