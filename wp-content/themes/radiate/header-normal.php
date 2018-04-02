@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 <?php wp_head(); ?>
 </head>
 
@@ -29,11 +30,24 @@
 </div>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-wrap clearfix" style="background-color: #3b1f62;">
+	<header >
+		<div class="header">
+		  <a class="leftnavbar" style="padding-right: 50px; padding-left: 40px;"><img src="<?php bloginfo('template_url'); ?>/images/header/logo1.png" style="height: 40px;" ></a>
+		  <div class="header-left" >
+		    <a class="active leftnavbar" href="#home">Home</a>
+		    <a class="leftnavbar" href="#contact">How to</a>
+		    <a class="leftnavbar" href="#contact">Contact</a>
+		    <a class="leftnavbar" href="#about">Help</a>
+		   
+		    <a class="rightnavbar" href="#contact">Register</a>
+		    <a class="rightnavbar" href="#contact">Log in</a>
+		    <a class="rightnavbar" href="#home">Account</a>
+		  </div>   
+
+		   
+		</div>
 			
-            <a href=""><img src="<?php bloginfo('template_url'); ?>/images/header/logo1.png" style="height: 40px; margin-top: 10px; margin-left: 5%;"></a>
-            	
+            
             		
             	
 				
@@ -41,38 +55,18 @@
 			
            
             
-			<div class="site-branding">
-
-            <?php if ( is_front_page() || is_home() ) : ?>
-   				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <?php else : ?>
-               <h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
-            <?php endif; ?>
-            <?php
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) : ?>
-               <p class="site-description"><?php echo $description; ?></p>
-            <?php endif;?>
-			</div>
-
 			
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<h4 class="menu-toggle"></h4>
-				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'radiate' ); ?></a>
-
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu-primary-container' ) ); ?>
-			</nav><!-- #site-navigation -->
-			
-			
-
-		</div><!-- .inner-wrap header-wrap -->
 	</header><!-- #masthead -->
 
 	
 
-		<div id="content" class="site-content">
+		<div id="content" class="site-content" style="background-color: lightgray;">
 		<div class="inner-wrap">
 
+
+
+	
+	
 
 
 	

@@ -2,7 +2,7 @@
 
 
 /**
- * The main template file.
+ *Template Name: index-bkd
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -37,7 +37,7 @@ get_header(); ?>
 </script>
 <body onload="function()">
 	
-		<?php echo do_shortcode('[smartslider3 slider=5]'); ?>			
+		<?php echo do_shortcode('[smartslider3 slider=1]'); ?>			
 	
 				
 				<!--start tab area-->
