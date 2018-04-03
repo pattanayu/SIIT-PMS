@@ -1779,7 +1779,7 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
     margin-right:400px;
 }
 .select-campus{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     border:0px;
     background-color: #3b1f62;
@@ -1866,10 +1866,12 @@ div#wp-custom-header:hover .wp-custom-header-video-button {
 .sidenav a:hover{
     background-color: #632E9B;
     color: #f1f1f1;
+    text-decoration: none;
 }
 .sidenav .active{
     background-color: #632E9B;
     color: #f1f1f1;
+    text-decoration: none;
 }
 
 
@@ -1954,10 +1956,10 @@ body {
   float: left;
   color: white;
   text-align: center;
-  padding: 15px 20px  ;
+  padding: 15px 17px  ;
   text-decoration: none;
-  font-size: 20px;
-  height: 65px;
+  font-size: 17px;
+  height: 60px;
   border-style: solid;
   border-color: white;
   border-width: 1px;
@@ -1970,10 +1972,10 @@ body {
   float: right;
   color: white;
   text-align: center;
-  padding: 15px 20px  ;
+  padding: 15px 17px  ;
   text-decoration: none;
-  font-size: 20px;
-  height: 65px;
+  font-size: 17px;
+  height: 60px;
   border-style: solid;
   border-color: white;
   border-width: 1px;
@@ -2013,3 +2015,4 @@ body {
   }
 }
 /*End new header*/
+/*icon*/

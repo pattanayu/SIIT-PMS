@@ -19,6 +19,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
+
 <?php wp_head(); ?>
 </head>
 
@@ -37,7 +38,7 @@
 		    <a class="active leftnavbar" href="#home">Home</a>
 		    <a class="leftnavbar" href="#contact">How to</a>
 		    <a class="leftnavbar" href="#contact">Contact</a>
-		    <a class="leftnavbar" href="#about">Help</a>
+		   
 		   
 		    <a class="rightnavbar" href="#contact">Register</a>
 		    <a class="rightnavbar" href="#contact">Log in</a>

@@ -37,7 +37,7 @@
 		    <a class="active leftnavbar" href="#home">Home</a>
 		    <a class="leftnavbar" href="#contact">How to</a>
 		    <a class="leftnavbar" href="#contact">Contact</a>
-		    <a class="leftnavbar" href="#about">Help</a>
+	
 		    <a class="leftnavbar" style="padding:0px;"><select name="campus" class="form-control select-campus" id="selectcampus">
 		    	<?php 
 		    	if(get_the_title() == 'index-bkd'  )
